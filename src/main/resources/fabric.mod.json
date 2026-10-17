@@ -1,0 +1,19 @@
+{
+	"schemaVersion": 1,
+	"id": "fireclientreplica",
+	"version": "${version}",
+	"name": "FireClient (replica)",
+	"description": "Client-side QoL utility mod for SMPs: kits, coordinates HUD, /ftext, /fcalc, /fkit. Independent reimplementation for 26.2.",
+	"authors": ["Community replica"],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["com.fireclient.replica.FireClientMod"]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

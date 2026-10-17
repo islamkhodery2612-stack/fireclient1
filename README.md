@@ -6,6 +6,7 @@ Reimplementazione indipendente, scritta da zero, delle funzioni principali di Fi
 
 - **Coordinate** a schermo, con coordinate scalate Overworld/Nether e direzione
 - **Kit**: salva l'inventario in file .json, copia/incolla dagli appunti, carica (il caricamento richiede Creative)
+- **Scroll click** (spento di default, si attiva dalle impostazioni): una tacca di rotella = un click, su = sinistro, giù = destro. Mentre è attivo la rotella non cambia lo slot della hotbar. Usa i tasti mouse di default; alcuni server possono vietarlo, controlla le regole.
 - **Comandi**: `/fkit`, `/ftext`, `/fcalc`, `/fireclient`
 - **Tasti**: K apre i kit, Shift destro apre le impostazioni (cambiabili in Controlli)
 

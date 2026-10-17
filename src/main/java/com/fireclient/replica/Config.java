@@ -14,6 +14,8 @@ public final class Config {
 	public static boolean coordsEnabled = true;
 	public static boolean showScaled = true;
 	public static boolean showFacing = true;
+	public static boolean scrollClick = false;
+	public static boolean scrollClickInvert = false;
 	public static int hudX = 4;
 	public static int hudY = 4;
 
@@ -21,6 +23,8 @@ public final class Config {
 		boolean coordsEnabled = true;
 		boolean showScaled = true;
 		boolean showFacing = true;
+		boolean scrollClick = false;
+		boolean scrollClickInvert = false;
 		int hudX = 4;
 		int hudY = 4;
 	}
@@ -46,6 +50,8 @@ public final class Config {
 			coordsEnabled = d.coordsEnabled;
 			showScaled = d.showScaled;
 			showFacing = d.showFacing;
+			scrollClick = d.scrollClick;
+			scrollClickInvert = d.scrollClickInvert;
 			hudX = d.hudX;
 			hudY = d.hudY;
 		} catch (IOException | RuntimeException e) {
@@ -58,6 +64,8 @@ public final class Config {
 		d.coordsEnabled = coordsEnabled;
 		d.showScaled = showScaled;
 		d.showFacing = showFacing;
+		d.scrollClick = scrollClick;
+		d.scrollClickInvert = scrollClickInvert;
 		d.hudX = hudX;
 		d.hudY = hudY;
 		try {

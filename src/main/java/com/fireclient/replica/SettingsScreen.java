@@ -20,7 +20,7 @@ public class SettingsScreen extends Screen {
 	@Override
 	protected void init() {
 		int cx = this.width / 2;
-		int y = 40;
+		int y = 36;
 
 		this.addRenderableWidget(Button.builder(label("Coordinates", Config.coordsEnabled), b -> {
 			Config.coordsEnabled = !Config.coordsEnabled;
@@ -40,6 +40,20 @@ public class SettingsScreen extends Screen {
 			Config.showFacing = !Config.showFacing;
 			Config.save();
 			b.setMessage(label("Facing direction", Config.showFacing));
+		}).bounds(cx - 100, y, 200, 20).build());
+		y += 24;
+
+		this.addRenderableWidget(Button.builder(label("Scroll click", Config.scrollClick), b -> {
+			Config.scrollClick = !Config.scrollClick;
+			Config.save();
+			b.setMessage(label("Scroll click", Config.scrollClick));
+		}).bounds(cx - 100, y, 200, 20).build());
+		y += 24;
+
+		this.addRenderableWidget(Button.builder(label("Scroll click: invert", Config.scrollClickInvert), b -> {
+			Config.scrollClickInvert = !Config.scrollClickInvert;
+			Config.save();
+			b.setMessage(label("Scroll click: invert", Config.scrollClickInvert));
 		}).bounds(cx - 100, y, 200, 20).build());
 		y += 32;
 
